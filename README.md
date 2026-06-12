@@ -4,7 +4,7 @@ AI-powered support chat for VPN-related questions. Built with **Express + OpenAI
 
 ## Live Demo
 
-[Add your deployment link here](https://vpn-support-assitance.vercel.app/)
+[deployment link](https://vpn-support-assitance.vercel.app/)
 
 ## Features
 
@@ -58,12 +58,12 @@ AI_MODEL=mixtral-8x7b-32768
 
 **Environment Variables:**
 
-| Variable       | Required | Default              | Description                                                       |
-| -------------- | -------- | -------------------- | ----------------------------------------------------------------- |
-| `GROQ_API_KEY` | ✅ Yes   | -                    | Your Groq API key for AI responses                                |
-| `AI_MODEL`     | ❌ No    | `mixtral-8x7b-32768` | Groq model to use (e.g., `mixtral-8x7b-32768`, `llama2-70b-4096`) |
-| `PORT`         | ❌ No    | `5000`               | Server port                                                       |
-| `NODE_ENV`     | ❌ No    | `development`        | Environment mode (`development` or `production`)                  |
+| Variable       | Required | Default                   | Description                                                       |
+| -------------- | -------- | ------------------------- | ----------------------------------------------------------------- |
+| `GROQ_API_KEY` | ✅ Yes   | -                         | Your Groq API key for AI responses                                |
+| `AI_MODEL`     | ❌ No    | `llama-3.3-70b-versatile` | Groq model to use (e.g., `mixtral-8x7b-32768`, `llama2-70b-4096`) |
+| `PORT`         | ❌ No    | `5000`                    | Server port                                                       |
+| `NODE_ENV`     | ❌ No    | `development`             | Environment mode (`development` or `production`)                  |
 
 Start the backend server:
 
