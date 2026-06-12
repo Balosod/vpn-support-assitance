@@ -25,7 +25,6 @@ export function getOrCreateSessionId(): string {
   if (typeof window !== "undefined") {
     const existingId = window.localStorage.getItem(SESSION_STORAGE_KEY);
     if (existingId) {
-      console.log("----existingId----", existingId);
       return existingId;
     }
 
@@ -64,7 +63,7 @@ export async function fetchChatStream(
   sessionId: string,
   onDelta: (delta: string) => void,
 ): Promise<ChatResponsePayload> {
-  console.log("---API_URL----", API_URL);
+  // console.log("---API_URL----", API_URL);
   const response = await fetch(`${API_URL}/chat/stream`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
